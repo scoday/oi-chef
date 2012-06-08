@@ -1,0 +1,119 @@
+    1  ls
+    2  cd chef-repo
+    3  knife client list
+    4  knife client delete domU-12-31-39-0B-D9-6E.compute-1.internal -y
+    5  knife node delete domU-12-31-39-0B-D9-6E.compute-1.internal -y
+    6  knife node list
+    7  cd .chef/
+    8  cat knife.rb 
+    9  ls a-l
+   10  diff client.pem /etc/chef/client.pem 
+   11  sudo diff client.pem /etc/chef/client.pem 
+   12  ls
+   13  ls -al
+   14  cat knife.rb 
+   15  ls a-l
+   16  cat > scoday.pem
+   17  vi scoday.pem
+   18  vi knife.rb 
+   19  cat knife.rb 
+   20  mv validation.pem scott709-validator.pem
+   21  vi knife.rb 
+   22  knife client list
+   23  vi knife.rb 
+   24  knife client list
+   25  cd ..
+   26  ls
+   27  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   28  export EDITOR=vi
+   29  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   30  knife cookbook upload -a
+   31  history > /home/ubuntu/week2-chef1.log
+   32  sftp scoday@scoday.com
+   33  clear
+   34  ls
+   35* knife node edit 
+   36  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   37  ls
+   38  cd co
+   39  cd cookbooks/
+   40  ls
+   41  cd apache/
+   42  ls
+   43  cd recipes/
+   44  ls
+   45  vim default.rb 
+   46  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   47  knife cookbook upload -a
+   48  cd ../
+   49  cd ../motd/
+   50  vim recipes/default.rb 
+   51  clear
+   52  knife cookbook upload -a
+   53  vim recipes/default.rb 
+   54  knife cookbook upload -a
+   55  ls
+   56  cd templates/
+   57  ls
+   58  vim default/
+   59  cd ../
+   60  ls
+   61  vim recipes/default.rb 
+   62  knife cookbook show apache
+   63  knife cookbook show apache 0.0.1
+   64  knife cookbook show apache latest
+   65  vim recipes/default.rb 
+   66  vim templates/default/
+   67  knife cookbook upload -a
+   68  vim templates/default/
+   69  knife cookbook upload
+   70  knife cookbook upload motd
+   71  knife environment list
+   72  clear
+   73  ls -al
+   74  cd ../../
+   75  ls
+   76  cd environments/
+   77  ls
+   78  vim dev.rb
+   79  knife environment upload dev
+   80  kife environment create dev
+   81  knife environment create dev
+   82  knife environment delete dev
+   83  kife environment from file dev.rb 
+   84  knife environment from file dev.rb 
+   85  vim dev.rb
+   86  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   87  vim production.rb
+   88  knife environment from file production.rb 
+   89  vim dev.rb 
+   90  knife environment from file dev.rb 
+   91  cd ../
+   92  ls
+   93  vim cookbooks/motd/templates/
+   94  knife cookbook upload motd
+   95  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   96  ls
+   97  cd environments/
+   98  ls
+   99  vim production.rb 
+  100  cd ../
+  101  cd cookbooks/apache/
+  102  ls
+  103  vim files/default/index.html 
+  104  knife cookbook upload apache
+  105  knife cookbook version 0.0.1
+  106  history | grep 0.0.1
+  107  knife cookbook show apache 0.0.1
+  108  cd ../
+  109  cd ../environments/
+  110  ls
+  111  vim production.rb 
+  112  ls
+  113  cd ..
+  114  ls
+  115  vim roles/base.rb 
+  116  knife role from file base
+  117  knife role from file roles/base.rb 
+  118  vim roles/base.rb 
+  119  history > /home/ubuntu/week2-chef2.log 

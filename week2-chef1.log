@@ -1,0 +1,31 @@
+    1  ls
+    2  cd chef-repo
+    3  knife client list
+    4  knife client delete domU-12-31-39-0B-D9-6E.compute-1.internal -y
+    5  knife node delete domU-12-31-39-0B-D9-6E.compute-1.internal -y
+    6  knife node list
+    7  cd .chef/
+    8  cat knife.rb 
+    9  ls a-l
+   10  diff client.pem /etc/chef/client.pem 
+   11  sudo diff client.pem /etc/chef/client.pem 
+   12  ls
+   13  ls -al
+   14  cat knife.rb 
+   15  ls a-l
+   16  cat > scoday.pem
+   17  vi scoday.pem
+   18  vi knife.rb 
+   19  cat knife.rb 
+   20  mv validation.pem scott709-validator.pem
+   21  vi knife.rb 
+   22  knife client list
+   23  vi knife.rb 
+   24  knife client list
+   25  cd ..
+   26  ls
+   27  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   28  export EDITOR=vi
+   29  knife node edit domU-12-31-39-0B-D9-6E.compute-1.internal
+   30  knife cookbook upload -a
+   31  history > /home/ubuntu/week2-chef1.log
